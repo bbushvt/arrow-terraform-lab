@@ -2,7 +2,7 @@ data "ibm_resource_group" "rg" {
   name = var.resource_group
 }
 
-data "ibm_is_ssh_key" "sshkey1" {
+resource "ibm_is_ssh_key" "sshkey1" {
   name = var.ssh_key_name
   public_key = var.ssh_public_key
   type = "rsa"
