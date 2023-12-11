@@ -4,7 +4,7 @@ data "ibm_resource_group" "rg" {
 
 data "ibm_is_ssh_key" "sshkey1" {
   name = var.ssh_key_name
-  public_key = var.public_key
+  public_key = var.ssh_public_key
   type = "rsa"
 }
 
